@@ -146,15 +146,23 @@
        * Handler for scrollbox mousewheel
        */
       methods.mousewheelMoveHandler = function(event, delta) {
+        
         var amount = 0,
             top = 0,
             percent = 0;
-            
-        amount = (delta > 0) ? -10 : 10;
+        
+        //delta is not available on osx scrollpad
+        if (delta) {
+          amount = (delta > 0) ? -10 : 10;
+        }
+        else {
+          amount = event.originalEvent.deltaY;
+        }
+        
         top = $content.scrollTop() + amount;
         
         // rounding of numbers causes 0 percentages on big scrolling areas
-        if(delta > 0){
+        if (delta > 0){
           // round down with the up wheel
           percent = Math.floor((top / (contentHeight - height)) * 100);
         }
