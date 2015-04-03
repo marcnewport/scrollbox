@@ -97,7 +97,7 @@
         handleHeight = Math.round((heightDiff / 100) * height);
         
         if (handleHeight < 16) handleHeight = 16;
-        if (handleHeight > 64) handleHeight = 64;
+        //if (handleHeight > 64) handleHeight = 64;
         
         var handleStyles = {
             background:'#666666',
