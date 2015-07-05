@@ -1,33 +1,39 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>jQuery scrollbox demo</title>
     <style type="text/css">
     body {
       background-color: #CCCCCC;
+      font-family: Helvetica, Arial, Sans-serif;
     }
-    
+
     p {
       margin-top: 0;
     }
-    
+
     .container {
       margin: 100px;
       padding: 30px 50px;
       background-color: #FFFFFF;
     }
-    
+
+    .container:nth-child(2),
+    .container:nth-child(4) {
+      background: #FFFFCC;
+    }
+
     .fixed {
       width: 300px;
     }
-    
+
     .content {
       height: 200px;
       overflow: auto;
     }
     </style>
-    
+
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="jquery.scrollbox.js"></script>
     <script type="text/javascript">
