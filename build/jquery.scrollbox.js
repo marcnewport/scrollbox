@@ -6,6 +6,7 @@
  * @license GPLv2
  *
  * @todo use namespace for all events
+ * @todo add wai-aria role http://www.w3.org/WAI/PF/aria/roles#scrollbar 
  */
 (function($) {
   $.fn.scrollbox = function(options) {
