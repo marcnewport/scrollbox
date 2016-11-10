@@ -1,5 +1,5 @@
 # scrollbox
-jQuery extension for a custom scrollbar that looks consistent across browsers and devices which is WCAG accessible
+jQuery extension for a custom scrollbar that looks consistent across browsers and devices which is WCAG friendly
 
 ##Use
     //init scrollbox
